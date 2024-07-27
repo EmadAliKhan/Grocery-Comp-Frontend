@@ -21,7 +21,7 @@ const AppRoutes = () => {
         
         <Routes>
           <Route element={<ProtectedRoute />}>
-            <Route path="/admin" element={<AdminForm />} />
+            <Route path="/maazAdmin" element={<AdminForm />} />
             <Route index element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/productDetail/:id" element={<ProductDetail />} />

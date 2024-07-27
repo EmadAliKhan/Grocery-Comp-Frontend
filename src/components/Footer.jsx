@@ -27,12 +27,12 @@ const Footer = () => {
             <div className="row mt-4">
               <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
                 <h4 className="text-uppercase mb-4 fw-bold">
-                  RR Grocery Store
+                Webstaurant Store
                 </h4>
                 <p>
-                  At RR Grocery Store, we are committed to providing the
-                  freshest produce, quality meats, and a wide variety of
-                  groceries to meet all your needs.
+                  At ebstaurant Store, we are committed to providing the
+                  freshest produce, and a wide variety of
+                  products to meet all your needs.
                 </p>
                 <p>
                   Visit us for a convenient and enjoyable shopping experience,

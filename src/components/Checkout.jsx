@@ -269,7 +269,7 @@ theme="light"
                       </tr>
                     </thead>
 
-                    <tbody>
+                    {/* <tbody>
                       {addToCart.map((product, index) => {
                         subTotal += product.price * product.count;
                         return (
@@ -304,12 +304,47 @@ theme="light"
                         <td colSpan={3} className="fw-bold">
                           {addToCart.map(
                             (product, index) =>
-                              product.data.price * product.count
+                             product.data.price * product.count
                           )}
                           €
                         </td>
                       </tr>
-                    </tbody>
+                    </tbody> */}
+                    <tbody>
+  {addToCart.map((product, index) => (
+    <tr key={index}>
+      <td>
+        <img
+          src={product?.data?.image}
+          height={50}
+          width={50}
+          alt="productImage.."
+        />
+      </td>
+      <td>{product?.data?.title}</td>
+      <td>{product?.data?.price}€</td>
+      <td>{product.count}</td>
+      <td>{(product?.data?.price * product.count).toFixed(2)}€</td>
+    </tr>
+  ))}
+  <tr>
+    <td colSpan={2} className="text-end fw-bold">
+      Free Shipping
+    </td>
+    <td colSpan={3} className="fw-bold">
+      0.00€
+    </td>
+  </tr>
+  <tr>
+    <td colSpan={2} className="text-end fw-bold">
+      SubTotal
+    </td>
+    <td colSpan={3} className="fw-bold">
+      {addToCart.reduce((acc, product) => acc + product.data.price * product.count, 0).toFixed(2)}€
+    </td>
+  </tr>
+</tbody>
+
                   </table>
 
                   <div className="col-md-12">

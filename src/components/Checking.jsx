@@ -31,7 +31,7 @@ const Checking = () => {
         <section className="row">
           <div className="col-12 col-md-3 mt-5 shadow pt-4 border bg-dark text-white">
             <div className="border-bottom ">
-            <h5 className="text-center">All Cateogries</h5>
+            <h5 className="text-center" onClick={()=>setSelectedCatogery("All")}>All Cateogries</h5>
             </div>
             <ul className="list-unstyled mt-2 ">
               <li

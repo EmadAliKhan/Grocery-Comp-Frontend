@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const [text] = useTypewriter({
-    words: ["Grocery Store"],
+    words: ["ebstaurant Store"],
     loop: {}
   })
 
@@ -20,7 +20,7 @@ const Navbar = () => {
       <nav style={{ marginTop: "-50px" }} className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm sticky-top w-100">
         <div className="container">
           <NavLink className="navbar-brand fw-bold w-50 fs-4" to="/">
-            RR {text}
+            W{text}
             <span className="text-danger"><Cursor /></span>
           </NavLink>
           <button
@@ -58,13 +58,13 @@ const Navbar = () => {
             <div className="row">
               <div className="d-flex">
 
-                <button
+                {/* <button
                   className="btn btn-outline-dark ms-2"
                   onClick={() => navigate("/admin")}
                 >
                   <i className="fa fa-user-plus me-1"></i>
                   Admin
-                </button>
+                </button> */}
                 <button
                   className="btn btn-outline-dark ms-2"
                   onClick={() => navigate("/cartpage")}

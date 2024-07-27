@@ -83,12 +83,12 @@ const ProductDetail = () => {
                 {singleProduct?.data?.category}
               </h4>
               <h1 className="display-5">{singleProduct?.data?.title}</h1>
-              <p className="lead fw-bolder">
+              {/* <p className="lead fw-bolder">
                 Rating{" "}
                 {singleProduct?.data?.rating &&
                   singleProduct?.data?.rating.rate}
                 <i className="fa fa-star"></i>
-              </p>
+              </p> */}
               <h3 className="display-6 fw-bold my-4">
               €{singleProduct?.data?.price}
               </h3>

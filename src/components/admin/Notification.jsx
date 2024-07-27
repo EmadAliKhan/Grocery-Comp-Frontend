@@ -5,14 +5,14 @@ import { Typography } from "@mui/material";
 import { useTypewriter } from "react-simple-typewriter";
 
 const Notification = () => {
-  const [notification, setNotification] = useState([]);
+  const [notifications, setNotification] = useState([]);
 
   const getNotification = async () => {
     try {
       const response = await axios.get(`${BASE_URL}/getContact`);
       setNotification(response.data);
-      // console.log(response.data);
-      console.log("RES", response.data);
+      console.log(response.data);
+      console.log("RES", notifications.data);
     } catch (error) {
       console.log(error, "ERROR");
     }
@@ -39,12 +39,14 @@ const Notification = () => {
 
   return (
     <>
+    {/* notifications > 0 ? */}
       <div className="container">
         <Typography className="text-center fw-bold" variant="h4">
           NOTIFICATIONS
         </Typography>
+        {/* {console.log(notifications,"notifications")} */}
         {
-          notification > 0 ?notification?.data?.map((e, i) => {
+           notifications?.data?.map((e, i) => {
             return (
               <div key={i} className="row">
                 <div className="col-md-12 text-center border shadow mt-4 p-3">
@@ -64,8 +66,9 @@ const Notification = () => {
                 <button className="btn btn-danger" onClick={()=>deleteNotification(e._id)}>Delete</button>
               </div>
             );
-          }) : <h1 className='d-flex justify-content-center align-items-center ' style={{ color: "grey", margin:"80px 0px 80px 0px" }}>N{text}</h1>
+          }) 
         }
+        {/* : <h1 className='d-flex justify-content-center align-items-center ' style={{ color: "grey", margin:"80px 0px 80px 0px" }}>N{text}</h1> */}
       </div>
     </>
   );

@@ -53,7 +53,7 @@ const deleteOrder = async(orderId)=>{
           </thead>
           {allOrder?.data?.map((e, i) => (
             <tbody key={i}>
-              {delivered === false ? (
+              { (
                 <tr>
                   <td>{i + 1}</td>
                   <td>
@@ -77,7 +77,7 @@ const deleteOrder = async(orderId)=>{
                     </button>
                   </td>
                 </tr>
-              ) : "no result"}
+              ) }
             </tbody>
           ))}
         </table>
