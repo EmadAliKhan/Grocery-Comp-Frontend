@@ -79,7 +79,7 @@ const Contact = () => {
 
       <div className="container bg-dark">
         <section className="row">
-          <div className="col-12 col-sm-6 col-md-4 mt-5 mb-3">
+          {/* <div className="col-12 col-sm-6 col-md-4 mt-5 mb-3">
             <div className="text-center">
               <p><RoomIcon className='fs-1 text-white' /></p>
               <div className="text-white">
@@ -87,8 +87,8 @@ const Contact = () => {
                 <p>R-54,55 Sector 2B, Gulshan-e-Zahoor , Nizami Road, Lines Area Karachi</p>
               </div>
             </div>
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 mt-5 mb-3">
+          </div> */}
+          <div className="col-12 col-sm-6 col-md-6 mt-5 mb-3">
             <div className="text-center">
               <p><EmailIcon className='fs-1 text-white' /></p>
               <div className="text-white">
@@ -100,7 +100,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-4 mt-5 mb-3">
+          <div className="col-12 col-sm-6 col-md-6 mt-5 mb-3">
             <div className="text-center">
               <p><CallIcon className='fs-1 text-white' /></p>
               <div className="text-white">
