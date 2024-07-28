@@ -349,15 +349,11 @@ theme="light"
 
                   <div className="col-md-12">
                     <div className="form-group mb-3">
-                      <label className="fs-5 fw-bold">
-                        Leave a comment here...
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={comment}
-                        onChange={(e) => setComment(e.target.value)}
-                        className="form-control"
-                      ></textarea>
+                      
+                      <h5 className="fw-bold"><u>Note</u>:</h5>
+                      <p className="text-center">After placing the Order, our store will contact you for the payment procedure <span className="fw-bold">...</span></p>
+                      <h5 className="text-center fw-bold">ThankYou!</h5>
+
                     </div>
                   </div>
                 </div>

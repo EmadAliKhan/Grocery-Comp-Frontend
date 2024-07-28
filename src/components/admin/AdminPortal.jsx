@@ -108,7 +108,7 @@ export default function Dashboard() {
   const [page, setPage] = React.useState(true);
 
   const [text] = useTypewriter({
-    words: ["Welcome to the Webstaurant Store", "This is the Admin Portal"],
+    words: ["Welcome to the Jiyae Store", "This is the Admin Portal"],
     loop: {}
   })
 
@@ -141,7 +141,7 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            <b>Webstaurant Store</b> (Admin Portal)
+            <b>Jiayae Store</b> (Admin Portal)
           </Typography>
         </Toolbar>
       </AppBar>

@@ -3,8 +3,9 @@ import Products from "./Products";
 
 const images = [
   "https://wallpapers.com/images/hd/supermarket-background-p6at3wx8tfok5n9q.jpg",
-  "https://cdn.create.vista.com/api/media/small/55684015/stock-photo-groceries-in-wicker-basket",
+  "https://www.evanik.com/wp-content/uploads/2022/03/blog-2-1.png",
   "https://e0.pxfuel.com/wallpapers/598/149/desktop-wallpaper-there-is-no-denying-that-online-shopping-is-one-of-the-biggest-groceries.jpg",
+  "https://ithinkbigger.com/wp-content/uploads/2022/03/eCommerce-Website-Components-photo-1024x375.jpg"
 ];
 
 const Checking = () => {

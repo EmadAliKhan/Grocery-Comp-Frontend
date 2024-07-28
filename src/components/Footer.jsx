@@ -27,10 +27,10 @@ const Footer = () => {
             <div className="row mt-4">
               <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
                 <h4 className="text-uppercase mb-4 fw-bold">
-                Webstaurant Store
+                Jiyae Store
                 </h4>
                 <p>
-                  At ebstaurant Store, we are committed to providing the
+                  At Jiyae Store, we are committed to providing the
                   freshest produce, and a wide variety of
                   products to meet all your needs.
                 </p>
